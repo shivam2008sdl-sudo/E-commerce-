@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>मिट्टी और लकड़ी - हस्तशिल्प ई-कॉमर्स स्टोर</title>
+  <meta name="description" content="प्राकृतिक, पर्यावरण के अनुकूल हस्तनिर्मित मिट्टी के बर्तन, कुल्हड़, लकड़ी के उत्पाद और पारंपरिक भारतीय हस्तशिल्प।">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Yantramanav:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="घोषणा">
+    <p>🌿 100% शुद्ध हस्तनिर्मित, पर्यावरण-अनुकूल उत्पाद | सीधे भारतीय कारीगरों से आपके घर तक 🇮🇳</p>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header" id="top">
+    <div class="header-container">
+      <div class="brand-wrap">
+        <a href="#top" class="brand-logo" aria-label="होमपेज पर जाएं">
+          <span class="logo-symbol" aria-hidden="true">🏺</span>
+          <div class="brand-text">
+            <span class="store-name">मिट्टी और लकड़ी</span>
+            <span class="store-tagline">हस्तनिर्मित • देसी • टिकाऊ</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="header-search">
+        <form class="search-form" id="search-form" role="search" onsubmit="event.preventDefault();">
+          <input 
+            type="search" 
+            id="search-input" 
+            placeholder="उत्पाद खोजें (उदा. मटका, कुल्हड़, चकला)..." 
+            aria-label="उत्पाद खोजें"
+            autocomplete="off"
+          >
+          <button type="button" id="search-clear-btn" class="search-clear hidden" aria-label="खोज साफ़ करें">✕</button>
+          <button type="submit" class="search-btn" aria-label="सर्च करें">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Navigation Links & Action Buttons -->
+      <nav class="nav-links" id="nav-links" aria-label="मुख्य मेनू">
+        <a href="#home" class="nav-link active">होम</a>
+        <a href="#products" class="nav-link">सभी उत्पाद</a>
+        <a href="#categories" class="nav-link">श्रेणियाँ</a>
+        <a href="#about" class="nav-link">हमारे बारे में</a>
+        <a href="#contact" class="nav-link">संपर्क</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/917089462917?text=नमस्ते,%20मुझे%20आपके%20हस्तशिल्प%20उत्पादों%20के%20बारे%20में%20जानकारी%20चाहिए।" target="_blank" rel="noopener noreferrer" class="quick-wa-btn" title="सीधे व्हाट्सएप पर पूछें" aria-label="व्हाट्सएप संपर्क">
+          <span class="wa-icon">💬</span>
+          <span class="wa-text">7089462917</span>
+        </a>
+
+        <button class="cart-btn" id="open-cart-btn" aria-label="शॉपिंग कार्ट खोलें">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-badge" id="cart-badge-count">0</span>
+        </button>
+
+        <button class="mobile-menu-toggle" id="menu-toggle-btn" aria-label="मेनू खोलें/बंद करें" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-content">
+      <span class="hero-badge">भारतीय शिल्प परंपरा का उत्सव</span>
+      <h1 class="hero-title">प्राकृतिक मिट्टी और लकड़ी के देसी हस्तशिल्प</h1>
+      <p class="hero-desc">
+        मिट्टी के बर्तनों की सोंधी खुशबू और शीशम-सागवान की लकड़ी की मजबूती। स्वास्थ्यप्रद, विष-मुक्त और पर्यावरण-हितैषी हस्तनिर्मित वस्तुएं।
+      </p>
+      <div class="hero-cta-group">
+        <a href="#products" class="btn btn-primary">दुकान देखें 🛍️</a>
+        <a href="https://wa.me/917089462917" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">व्हाट्सएप पर ऑर्डर करें 📲</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section categories-section" id="categories">
+    <div class="section-header">
+      <h2 class="section-title">प्रमुख श्रेणियाँ</h2>
+      <p class="section-subtitle">अपनी पसंद की श्रेणी चुनें और पारंपरिक कला का आनंद लें</p>
+    </div>
+
+    <div class="category-pills-wrap">
+      <button class="cat-pill active" data-category="all">सभी उत्पाद</button>
+      <button class="cat-pill" data-category="mitti-bartan">मिट्टी के बर्तन</button>
+      <button class="cat-pill" data-category="kulhad-cups">कुल्हड़ और कप</button>
+      <button class="cat-pill" data-category="lakdi-bartan">लकड़ी के बर्तन</button>
+      <button class="cat-pill" data-category="pooja">पूजा सामग्री</button>
+      <button class="cat-pill" data-category="home-decor">घर की सजावट</button>
+      <button class="cat-pill" data-category="traditional-craft">पारंपरिक हस्तशिल्प</button>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section products-section" id="products">
+    <div class="section-header product-list-header">
+      <div>
+        <h2 class="section-title">हमारा संग्रह</h2>
+        <p class="section-subtitle" id="products-count-text">12 हस्तनिर्मित उत्पाद उपलब्ध</p>
+      </div>
+      
+      <!-- Sorting Controls -->
+      <div class="filter-controls">
+        <label for="sort-select" class="sort-label">क्रमबद्ध करें:</label>
+        <select id="sort-select" class="sort-dropdown" aria-label="उत्पादों को क्रमबद्ध करें">
+          <option value="default">अनुशंसित (Default)</option>
+          <option value="price-low">मूल्य: कम से अधिक</option>
+          <option value="price-high">मूल्य: अधिक से कम</option>
+          <option value="name-asc">नाम: अ से ज्ञ</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Notice about Demo Content -->
+    <div class="demo-notice" role="alert">
+      ℹ️ <strong>विक्रेता सूचना:</strong> नीचे प्रदर्शित उत्पाद, चित्र एवं कीमतें डेमो हैं। आप अपनी पसंद के अनुसार नए उत्पाद जोड़ सकते हैं।
+    </div>
+
+    <!-- Product Grid Container -->
+    <div class="product-grid" id="product-grid" aria-live="polite">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Empty State -->
+    <div class="no-products-state hidden" id="no-products-msg">
+      <div class="no-prod-icon">🔍</div>
+      <h3>कोई उत्पाद नहीं मिला</h3>
+      <p>कृपया अन्य शब्द खोजें अथवा फ़िल्टर हटाएँ।</p>
+      <button class="btn btn-outline" id="reset-filters-btn">सभी उत्पाद देखें</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-icon">🌱</div>
+        <h3>100% प्राकृतिक एवं विष-मुक्त</h3>
+        <p>हमारे सभी मिट्टी के बर्तन बिना किसी कृत्रिम रासायनिक पॉलिश या लेड के शुद्ध प्राकृतिक मिट्टी से तैयार किए जाते हैं।</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🪵</div>
+        <h3>टिकाऊ शीशम व सागवान</h3>
+        <p>रसोई और सजावट के लिए बनाए गए लकड़ी के बर्तन प्राकृतिक सरसों व अलसी के तेल से उपचारित होते हैं।</p>
+      </div>
+      <div class="about-card">
+        <div class="about-icon">🤝</div>
+        <h3>सीधे कारीगरों का समर्थन</h3>
+        <p>हर खरीद से ग्रामीण भारतीय शिल्पकारों, कुम्हारों और काष्ठकारों को सीधा और सम्मानजनक रोजगार मिलता है।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & WhatsApp Ordering Info Section -->
+  <section class="section contact-section" id="contact">
+    <div class="contact-box">
+      <div class="contact-info-col">
+        <span class="badge-tag">सीधा संपर्क</span>
+        <h2>व्हाट्सएप पर आसान ऑर्डर</h2>
+        <p>किसी भी उत्पाद की पूछताछ, थोक ऑर्डर (Bulk Order) या कस्टमाइज़ेशन के लिए हमारे आधिकारिक व्हाट्सएप नंबर पर सीधे संपर्क करें।</p>
+        
+        <ul class="contact-details-list">
+          <li>
+            <span class="c-icon">📞</span>
+            <div>
+              <strong>व्हाट्सएप एवं कॉल नंबर:</strong>
+              <p><a href="tel:+917089462917">+91 7089462917</a> (7089462917)</p>
+            </div>
+          </li>
+          <li>
+            <span class="c-icon">⏱️</span>
+            <div>
+              <strong>उपलब्धता समय:</strong>
+              <p>सोमवार से शनिवार (प्रातः 9:00 बजे से रात्रि 8:00 बजे तक)</p>
+            </div>
+          </li>
+          <li>
+            <span class="c-icon">📦</span>
+            <div>
+              <strong>डिलिवरी:</strong>
+              <p>संपूर्ण भारत में सुरक्षित पैकेजिंग के साथ सुरक्षित होम डिलिवरी।</p>
+            </div>
+          </li>
+        </ul>
+
+        <a href="https://wa.me/917089462917?text=नमस्ते,%20मुझे%20मिट्टी%20और%20लकड़ी%20के%20सामान%20के%20बारे%20में%20जानकारी%20चाहिए।" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp large-btn">
+          💬 व्हाट्सएप पर संदेश भेजें (+91 7089462917)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Drawer Overlay -->
+  <div class="cart-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+
+  <!-- Sliding Cart Sidebar -->
+  <aside class="cart-sidebar" id="cart-sidebar" aria-label="शॉपिंग कार्ट" aria-hidden="true">
+    <div class="cart-header">
+      <div class="cart-header-title">
+        <h3>आपकी शॉपिंग कार्ट (<span id="cart-items-count">0</span>)</h3>
+      </div>
+      <button class="cart-close-btn" id="close-cart-btn" aria-label="कार्ट बंद करें">✕</button>
+    </div>
+
+    <!-- Cart Items List Container -->
+    <div class="cart-body" id="cart-body">
+      <!-- Items dynamically rendered here -->
+    </div>
+
+    <!-- Cart Footer with Checkout Form Trigger -->
+    <div class="cart-footer" id="cart-footer">
+      <div class="cart-summary-line">
+        <span>उप-योग (Subtotal):</span>
+        <span class="cart-subtotal-val" id="cart-subtotal">₹0</span>
+      </div>
+      <p class="delivery-note">🚚 डिलिवरी शुल्क ऑर्डर पुष्टिकरण के समय व्हाट्सएप पर बताया जाएगा।</p>
+
+      <div class="cart-actions-group">
+        <button class="btn btn-primary full-width" id="proceed-checkout-btn">
+          व्हाट्सएप पर ऑर्डर करें 👉
+        </button>
+        <button class="btn btn-text" id="clear-cart-btn">कार्ट खाली करें</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- WhatsApp Checkout Modal -->
+  <div class="modal-backdrop" id="checkout-modal" aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+      <div class="modal-header">
+        <h3 id="modal-heading">📦 ऑर्डर विवरण भरें</h3>
+        <button class="modal-close-btn" id="close-modal-btn" aria-label="बंद करें">✕</button>
+      </div>
+
+      <form id="checkout-form" class="checkout-form" novalidate>
+        <div class="modal-body">
+          <p class="checkout-instruction">
+            विवरण सबमिट करते ही आपका ऑर्डर सीधे हमारे व्हाट्सएप नंबर <strong>+91 7089462917</strong> पर संदेश के रूप में खुल जाएगा।
+          </p>
+
+          <div class="form-group">
+            <label for="cust-name">आपका पूरा नाम <span class="required">*</span></label>
+            <input type="text" id="cust-name" class="form-control" placeholder="उदा. रमेश कुमार" required autocomplete="name">
+            <span class="field-error" id="err-name">कृपया अपना नाम दर्ज करें।</span>
+          </div>
+
+          <div class="form-group">
+            <label for="cust-phone">मोबाइल / व्हाट्सएप नंबर <span class="required">*</span></label>
+            <input type="tel" id="cust-phone" class="form-control" placeholder="उदा. 9876543210 (10 अंक)" required maxlength="10" autocomplete="tel">
+            <span class="field-error" id="err-phone">कृपया मान्य 10 अंकों का मोबाइल नंबर दर्ज करें।</span>
+          </div>
+
+          <div class="form-group">
+            <label for="cust-address">पूरा पता (मकान सं., गली, क्षेत्र) <span class="required">*</span></label>
+            <textarea id="cust-address" class="form-control" rows="2" placeholder="उदा. फ्लैट 201, तुलसी कुंज, तिलक नगर" required autocomplete="street-address"></textarea>
+            <span class="field-error" id="err-address">कृपया पूरा डिलिवरी पता दर्ज करें।</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-half">
+              <label for="cust-city">शहर / जिला <span class="required">*</span></label>
+              <input type="text" id="cust-city" class="form-control" placeholder="उदा. जयपुर" required autocomplete="address-level2">
+              <span class="field-error" id="err-city">शहर का नाम दर्ज करें।</span>
+            </div>
+
+            <div class="form-group col-half">
+              <label for="cust-pincode">पिन कोड (PIN Code) <span class="required">*</span></label>
+              <input type="text" id="cust-pincode" class="form-control" placeholder="उदा. 302001 (6 अंक)" required maxlength="6" autocomplete="postal-code">
+              <span class="field-error" id="err-pincode">मान्य 6 अंकों का पिन कोड दें।</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cust-notes">अतिरिक्त निर्देश (वैकल्पिक)</label>
+            <input type="text" id="cust-notes" class="form-control" placeholder="उदा. दोपहर 2 बजे के बाद कॉल करें">
+          </div>
+
+          <div class="order-summary-box" id="modal-order-summary">
+            <!-- Dynamic order total inside form -->
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline" id="cancel-checkout-btn">रद्द करें</button>
+          <button type="submit" class="btn btn-whatsapp" id="submit-order-btn">
+            📲 व्हाट्सएप पर ऑर्डर भेजें (7089462917)
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast-notify" role="status" aria-live="polite"></div>
+
+  <!-- Scroll to Top Button -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="ऊपर जाएं">↑</button>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4 class="footer-brand-title">🏺 मिट्टी और लकड़ी</h4>
+        <p class="footer-text">
+          शुद्ध मिट्टी के बर्तन, पारंपरिक काष्ठशिल्प एवं हस्तनिर्मित पर्यावरण-अनुकूल कलाकृतियों का विश्वसनीय ऑनलाइन मंच।
+        </p>
+        <p class="seller-wa-highlight">
+          व्हाट्सएप संपर्क: <strong>+91 7089462917</strong>
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">त्वरित लिंक्स</h4>
+        <ul class="footer-links">
+          <li><a href="#home">होमपेज</a></li>
+          <li><a href="#products">सभी हस्तशिल्प उत्पाद</a></li>
+          <li><a href="#categories">श्रेणियां</a></li>
+          <li><a href="#about">हमारे कारीगर</a></li>
+          <li><a href="#contact">संपर्क व सहायता</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">लोकप्रिय श्रेणियां</h4>
+        <ul class="footer-links">
+          <li><a href="#products" onclick="window.filterByCategory('mitti-bartan')">पारंपरिक मिट्टी के बर्तन</a></li>
+          <li><a href="#products" onclick="window.filterByCategory('kulhad-cups')">देसी चाय के कुल्हड़</a></li>
+          <li><a href="#products" onclick="window.filterByCategory('lakdi-bartan')">शीशम लकड़ी के चकला-बेलन</a></li>
+          <li><a href="#products" onclick="window.filterByCategory('pooja')">पीतल व मिट्टी पूजा सामग्री</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">सुरक्षित खरीदारी</h4>
+        <p class="footer-text">सीधा व्हाट्सएप ऑर्डरिंग सिस्टम। कोई छिपा हुआ शुल्क नहीं। विक्रेता से सीधी बातचीत और डिलीवरी ट्रैकिंग।</p>
+        <div class="footer-badges">
+          <span class="badge-mini">✅ 100% हस्तनिर्मित</span>
+          <span class="badge-mini">🇮🇳 मेक इन इंडिया</span>
+          <span class="badge-mini">🌿 प्लास्टिक मुक्त</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 मिट्टी और लकड़ी (Mitti Aur Lakdi). सर्वाधिकार सुरक्षित। भारतीय कारीगरों को समर्पित।</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
